@@ -12,21 +12,21 @@
     <!-- Main part -->
     <main>
         <!-- Home screen -->
-        <section class="home hidden flex items-center h-screen justify-center">
+        <section id="home-screen" class="home  flex items-center h-screen justify-center">
             <div class="text-center space-y-5">
                 <h1 class="text-8xl text-center font-extrabold uppercase text-white">Alphabet Clash</h1>
                 <p class="text-white text-2xl text-center">Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
-                <button class="btn font-bold">Play Now</button>
+                <button onclick="play()" class="btn font-bold">Play Now</button>
             </div>
         </section>
 
         <!-- Play ground section-->
-        <section class="play-ground hidden h-screen flex items-center justify-center">
+        <section id="play-ground" class="play-ground hidden h-screen flex items-center justify-center">
             <div class="space-y-12">
                 <div class="artboard artboard-horizontal phone-6 border-8 rounded-md bg-slate-300 opacity-70 border-10 border-gray-800">
                     <p class="text-white bg-gray-800 w-1/2 rounded-br-md rounded-bl-md text-center mx-auto p-1">Don't watch keyboard  while playing...</p>
                     <div class="flex items-center justify-center h-full">
-                        <p class="text-9xl font-bold uppercase">Y</p>
+                        <p id="type-alphabet" class="text-9xl font-bold uppercase">Y</p>
                     </div>
                 </div>
                 <!-- Keyboard  -->
@@ -88,7 +88,7 @@
         </section>
 
         <!-- score screen  section-->
-        <section class="score flex justify-center items-center h-screen">
+        <section class="score hidden flex justify-center items-center h-screen">
             <div class="p-5 text-center text-white space-y-4 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-md">
                 <h1 class="text-5xl font-bold">Score: <span class="font-normal">14</span> </h1>
                 <button class="btn font-bold">Play Again</button>
@@ -96,6 +96,10 @@
             </div>
         </section>
     </main>
+
+    <!-- External JavaScript  -->
+    <script src="./js/utility.js"></script>
+    <script src="./js/alpha.js"></script>
 
 </body>
 </html>
