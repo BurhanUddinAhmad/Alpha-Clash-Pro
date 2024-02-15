@@ -12,7 +12,7 @@ function handleKeyboardKeyUpEvent(event) {
 
     //stop the game if pressed Esc
     if(playerPressed === 'Escape') {
-        gameOver();
+        gameOVer();
     }
 
     // Key player is expected to press
@@ -109,5 +109,5 @@ function gameOVer() {
   // clear the last selected alphabet highlight
   const currentAlphabet = getElementTextById('current-alphabet');
   // console.log(currentAlphabet);
-  removeBackgroundColorById(currentAlphabet);
+  removeButtonBg(currentAlphabet);
 };
